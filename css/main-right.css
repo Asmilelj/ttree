@@ -1,0 +1,517 @@
+/* 公共样式 */
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-family: 微软雅黑;
+  overflow: hidden;
+}
+#navi {
+  width: 100%;
+  position: relative;
+  word-wrap: break-word;
+  border-bottom: 1px solid #065fb9;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  background-image: -moz-linear-gradient(top, #ebebeb, #bfbfbf);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #ebebeb),
+    color-stop(1, #bfbfbf)
+  );
+}
+#naviDiv {
+  font-size: 14px;
+  color: #333;
+  padding-left: 10px;
+}
+a:hover {
+  text-decoration: none;
+  color: #66aee9;
+  cursor: pointer;
+}
+#buttonGroup {
+  padding-left: 10px;
+  float: left;
+  height: 35px;
+}
+#mainContainer {
+  text-align: center;
+  width: 100%;
+  margin: 100px auto;
+  font-size: 16px;
+  border-radius: 15px 15px;
+}
+/* 请假样式 */
+#leave_top {
+  position: relative;
+  width: 40%;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 12px 12px 12px 12px;
+}
+#leave {
+  margin: 10px 10px 10px 10px;
+}
+.form-group {
+  margin-top: 10px;
+  text-align: left;
+  font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: medium;
+  white-space: nowrap;
+}
+.form-title {
+  font-size: 20px;
+  background-color: #d2e9ff;
+  border-radius: 5px;
+}
+.form-control {
+  display: block;
+  width: 50%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: #eee;
+  opacity: 1;
+}
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+textarea.form-control {
+  height: auto;
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: #449d44;
+  margin-left: 80%;
+  color: #ffffff;
+}
+/* 请假反馈 */
+#leave_feedback {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 12px 12px 12px 12px;
+}
+/* 作业查询 */
+#homework_query {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 12px 12px 12px 12px;
+}
+.timeT {
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: medium;
+  white-space: nowrap;
+}
+.hwq_top {
+  height: 200px;
+  margin-top: 50px;
+}
+.timeT_btn {
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: medium;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+.hq {
+  display: inline-block;
+  font-size: 20px;
+  background-color: #d2e9ff;
+  height: 30px;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.fc {
+  width: 30%;
+  height: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.f:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+.btn_q {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: #449d44;
+  color: #ffffff;
+}
+.btn_r {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: #f5f5f5;
+  color: #000000;
+  margin-left: 20px;
+}
+.btn_f {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: #449a9d;
+  color: #ffffff;
+  margin-left: 20px;
+}
+/* 作业上传 */
+#hwork_load {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 12px 12px 12px 12px;
+}
+#near {
+  float: left;
+  border-bottom: solid 5px #d2e9ff;
+  width: 15%;
+  margin-left: 20px;
+}
+#history {
+  float: left;
+  width: 50%;
+}
+#near a {
+  font-size: 20px;
+}
+#history a {
+  font-size: 20px;
+}
+#near a:hover {
+  text-decoration: none;
+  color: #66aee9;
+  cursor: pointer;
+}
+#history a:hover {
+  text-decoration: none;
+  color: #66aee9;
+  cursor: pointer;
+}
+#zysc {
+  clear: both;
+  position: relative;
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 30px;
+}
+#scnum {
+  display: block;
+  background-color: #d2e9ff;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 40%;
+}
+#scname {
+  display: block;
+  background-color: #d2e9ff;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 40%;
+}
+#scbj {
+  display: block;
+  background-color: #d2e9ff;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 40%;
+}
+.file-box {
+  display: inline-block;
+  position: relative;
+  padding: 3px 5px;
+  overflow: hidden;
+  color: #fff;
+  background-color: #449d44;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+.file-btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background-color: transparent;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+.btna {
+  background-color: #9cc8dd;
+  border: 1px solid #cdcdcd;
+  height: 30px;
+  width: 90px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+#zysc_top {
+  height: 60px;
+  margin-top: 20px;
+}
+#zuoyesc {
+  height: 40px;
+  margin-bottom: 10px;
+}
+/* 课程表 */
+#timetable {
+  position: relative;
+  width: 50%;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 12px 12px 12px 12px;
+}
+#topt {
+  background-color: #d2e9ff;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+}
+#kcb {
+  margin: 10px 0 0 20px;
+  float: left;
+  height: 30px;
+  width: 10%;
+  background-color: #ffffff;
+  color: #000000;
+}
+#yhjs {
+  display: block;
+  float: left;
+  width: 75%;
+  text-align: right;
+}
+#zhuxiao {
+  display: block;
+  float: left;
+  margin-left: 15px;
+}
+#mdl {
+  display: block;
+  height: 30px;
+  margin-top: 5px;
+  border: solid 1px #555;
+  border-radius: 5px;
+  line-height: 30px;
+}
+#xuenian {
+  float: left;
+  margin-left: 10px;
+}
+#xueqi {
+  float: left;
+}
+#anniu {
+  float: left;
+  display: block;
+}
+.button_1 {
+  background-color: #d2e9ff;
+  color: #ffffff;
+  width: 45px;
+  height: 30px;
+  margin-left: 80px;
+}
+.table td {
+  border: solid #f5f5f5;
+  border-width: 1px 1px 1px 1px;
+}
+/* 成绩修改申请 */
+#score {
+  position: relative;
+  width: 40%;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 12px 12px 12px 12px;
+  border: solid 2px #555555;
+}
+#score_sq span {
+  display: block;
+  font-size: 25px;
+  margin-top: 30px;
+}
+.score_xgsq {
+  margin-top: 20px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: medium;
+  white-space: nowrap;
+}
+.fc_score {
+  width: 30%;
+  height: 30px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.btn_tijiao {
+  margin-left: 300px;
+  height: 50px;
+}
+.btn_tj {
+  width: 50px;
+  height: 30px;
+  background-color: #449d44;
+  color: #ffffff;
+}
+/* 密码修改 */
+.changePws {
+  position: relative;
+  width: 50%;
+  background-color: #ffffff;
+  margin: auto;
+  border-radius: 12px 12px 12px 12px;
+  border: solid 2px #555555;
+}
+.formStyle {
+  margin: auto;
+  padding: 20px;
+  box-shadow: 5px 5px 1px rgba(181, 181, 181, 0.7);
+  border-radius: 10px;
+}
+.formheader {
+  margin: 20px auto;
+  font-size: 25px;
+  color: #103362;
+  font-weight: bold;
+  text-align: center;
+}
+.pw {
+  display: inline-block;
+  font-size: 20px;
+  background-color: #d2e9ff;
+  height: 30px;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.cp3 {
+  height: 60px;
+  display: block;
+  margin-top: 10px 0 10px 0;
+  text-align: center;
+  font-family: "Avenir Next W00", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: medium;
+  white-space: nowrap;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="../css/main-right.css">
+<script type="text/javascript" src="../js/Calendar3.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+<body>
+
+    <div id="navi">
+        <div id='naviDiv'>
+            <span>
+                <img src="../images/arror.gif" width="11" height="11" border="0" alt="">
+            </span>&nbsp;作业管理
+            <span>&nbsp;
+                <span>
+                    <img src="../images/arror.gif" width="7" height="11" border="0" alt="">
+                </span>&nbsp;
+                <a href="stu-homework uploading.html">作业上传</a>
+                <span>&nbsp;
+        </div>
+    </div>
+    <div id="mainContainer">
+        <form action="" method="post" enctype="multipart/form-data">
+            <div id="hwork_load">
+                <div id="zysc_top">
+                    <div id="near">
+                        <a href="#"> 最近作业</a>
+                    </div>
+                    <div id="history">
+                        <a href="#">历史记录</a>
+                    </div>
+                    <br>
+                    <hr style="width: 95%;border-top:2px solid #555555;margin: 20px 0 0 10px">
+                </div>
+                <div id="zysc">
+                    <span id="scnum">学号：2111706256</span>
+                    <br>
+                    <span id="scname">姓名：张三</span>
+                    <br>
+                    <span id="scbj">班级：单控2班</span>
+                    <br>
+                    <div id=zuoyesc>
+                        <label for="fileField" style="margin-left: 280px">请选择文件：</label>
+                        <div class="file-box">
+                            <input type="file" class="file-btn" id="fileField" /> 上传文件
+                        </div>
+                        <!-- <input type='button' class='btna' value='选择文件' />
+                    <input type="file" name="fileField" class="filea" id="fileField" size="20" onchange="document.getElementById('textfield').value=this.value"
+                        hidden="hidden" /> -->
+                        <button type="button" class="btna" onclick="alert('提交成功')">提交</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

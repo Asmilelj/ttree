@@ -1,0 +1,148 @@
+/*--------------------------------------------------|
+| dTree 2.05 | www.destroydrop.com/javascript/tree/ |
+|---------------------------------------------------|
+| Copyright (c) 2002-2003 Geir Landr?               |
+|--------------------------------------------------*/
+
+.dtree {
+	font-family: "楷体";
+	font-size: 24px;
+	color: #666;
+	white-space: nowrap;
+	padding: 8px 0 0 20px;
+	text-align: center;
+}
+.dtree img {
+	border: 0px;
+	vertical-align: middle;
+	text-align: left;
+}
+.dtree a {
+	color: #333;
+	text-decoration: none;
+}
+.dtree a.node, .dtree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+.dtree a.node:hover, .dtree a.nodeSel:hover {
+	color: #d2e9ff;
+	text-decoration: none;
+}
+/* .dtree a.nodeSel:hover {
+	background-color: #c0d2ec;
+} */
+.dtree .clip {
+	overflow: hidden;
+
+}
+/* .dTreeNode {
+	display: inline-block;
+	text-align: center;
+} */
+
+.dTreeNode0 {
+	background: #d2e9ff; 
+	width: 85%;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 25px;
+	text-align: center;
+	border-radius: 12px 12px 12px 12px;
+	vertical-align: middle;
+}
+.dTreeNode1 {
+	background: gainsboro;
+	width: 85%;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 25px;
+	border-radius: 12px 12px 12px 12px;
+	z-index: 1;
+}
+
+.dTreeNode2 {
+	/* background: gainsboro; */
+	width: 85%;
+	height: 30px;
+	line-height: 30px;
+	margin: -5px 0 10px -20px   ;
+	z-index: 999;                                                                                                                                                                                                                                        
+}
+.dTreeNode3 {
+	/* background: gainsboro; */
+	width: 85%;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 25px;
+	margin-left: 5px;
+}
+.dTreeNode4 {
+	background: gainsboro;
+	width: 85%;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 25px;
+	border-radius: 12px 12px 12px 12px;
+	/* z-index: 1; */
+}
+.dTreeNode5 {
+	/* background: gainsboro; */
+	width: 85%;
+	height: 30px;
+	line-height: 30px;
+	margin: -5px 0 10px 0 
+}
+.dTreeNode6 {
+	/* background: gainsboro; */
+	width: 85%;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 25px;
+}
+.dTreeNode7 {
+	background: gainsboro;
+	width: 85%;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 25px;
+	border-radius: 12px 12px 12px 12px
+}
+
+.dTreeNode8 {
+	/* background: gainsboro; */
+	width: 85%;
+	height: 30px;
+	line-height: 30px;
+	margin: -5px 0 25px -10px;
+}
+.dTreeNode9 {
+	background: gainsboro;
+	width: 85%;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 25px;
+	border-radius: 12px 12px 12px 12px
+}
+.dTreeNode10 {
+	/* background: gainsboro; */
+	width: 85%;
+	height: 30px;
+	line-height: 30px;
+	margin: -5px 0 10px 0
+}
+.dTreeNode11 {
+	/* background: gainsboro; */
+	width: 85%;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 0 25px 22px 
+}
+.dTreeNode12 {
+	background: gainsboro;
+	width: 85%;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 25px;
+	border-radius: 12px 12px 12px 12px
+}

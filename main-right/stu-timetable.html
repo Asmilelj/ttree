@@ -1,0 +1,144 @@
+<html>
+
+<head>
+    <title></title>
+    <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
+    <link rel="stylesheet" href="../css/mycss.css">
+    <link rel="stylesheet" href="../css/main-right.css">
+    <script src="../js/jquery.js"></script>
+</head>
+
+<body>
+    <div id="navi">
+        <div id='naviDiv'>
+            <span>
+                <img src="../images/arror.gif" width="11" height="11" border="0" alt="">
+            </span>&nbsp;课程管理
+            <span>
+                <img src="../images/arror.gif" width="7" height="11" border="0" alt="">
+            </span>&nbsp;
+            <a href="stu-timetable.html">课程表</a>
+        </div>
+    </div>
+    <div id="mainContainer">
+        <form action="" method="POST">
+            <div id="timetable">
+                <div id="topt">
+                    <div id="kcb">
+                        <span>课程表</span>
+                    </div>
+                    <div id="yhjs">
+                        <span>当前登录用户:&nbsp;陈飞 &nbsp;&nbsp;&nbsp;角色:&nbsp;学生</span>
+                    </div>
+                    <div id="zhuxiao">
+                        <span>
+                            <img src="url(.......)" />
+                            <font>注销</font>
+                        </span>
+                    </div>
+                </div>
+                <div id="mdl">
+                    <div id="xuenian">
+                        <label>学年：</label>
+                        <input class="fcxn" type="text" list="xn" autofocus="autofocus">
+                        <datalist id="xn">
+                            <option>2017-2018学年</option>
+                            <option>2016-2017学年</option>
+                        </datalist>
+                    </div>
+                    <div id="xueqi">
+                        <label>学期：</label>
+                        <input class="fcxq" type="text" list="xq" autofocus="autofocus">
+                        <datalist id="xq">
+                            <option>第1学期</option>
+                            <option>第2学期</option>
+                        </datalist>
+                    </div>
+                    <div id="anniu">
+                        <input type="button" class="button_1" value="导出">
+                        <input type="button" class="button_1" value="打印">
+                    </div>
+                </div>
+                <div>
+                    <table class="table" cellspacing="5px" cellpadding="0px" style="text-align: center;">
+                        <tr style="height: 30px;line-height: 30px">
+                            <td></td>
+                            <td bgcolor="#d2e9ff" width="150px">星期一</td>
+                            <td bgcolor="#d2e9ff" width="150px">星期二</td>
+                            <td bgcolor="#d2e9ff" width="150px">星期三</td>
+                            <td bgcolor="#d2e9ff" width="150px">星期四</td>
+                            <td bgcolor="#d2e9ff" width="150px">星期五</td>
+                        </tr>
+                        <tr style="height: 30px;line-height: 30px">
+                            <td bgcolor="#d2e9ff">第1节课</td>
+                            <td id="one1" rowspan="2"></td>
+                            <td id="two1" rowspan="2"></td>
+                            <td id="three1" rowspan="2"></td>
+                            <td id="four1" rowspan="2"></td>
+                            <td id="five1" rowspan="2"></td>
+                        </tr>
+                        <tr style="height: 30px;line-height: 30px">
+                            <td bgcolor="#d2e9ff">第2节课</td>
+                        </tr>
+                        <tr style="height: 30px;line-height: 30px">
+                            <td bgcolor="#d2e9ff">第3节课</td>
+                            <td id="one2" rowspan="2"></td>
+                            <td id="two2" rowspan="2"></td>
+                            <td id="three2" rowspan="2"></td>
+                            <td id="four2" rowspan="2"></td>
+                            <td id="five2" rowspan="2"></td>
+                        </tr>
+                        <tr style="height: 30px;line-height: 30px">
+                            <td bgcolor="#d2e9ff">第4节课</td>
+                        </tr>
+                        <tr style="height: 20px;line-height: 20px">
+                            <td width="100px" height="20px"></td>
+                            <td colspan="5" bgcolor="#d2e9ff"></td>
+                        </tr>
+                        <tr style="height: 30px;line-height: 30px">
+                            <td bgcolor="#d2e9ff">第5节课</td>
+                            <td id="one3" rowspan="2"></td>
+                            <td id="two3" rowspan="2"></td>
+                            <td id="three3" rowspan="2"></td>
+                            <td id="four3" rowspan="2"></td>
+                            <td id="five3" rowspan="2"></td>
+                        </tr>
+                        <tr style="height: 30px;line-height: 30px">
+                            <td bgcolor="#d2e9ff">第6节课</td>
+                        </tr>
+                        <tr style="height: 30px;line-height: 30px">
+                            <td bgcolor="#d2e9ff">第7节课</td>
+                            <td id="one4" rowspan="2"></td>
+                            <td id="two4" rowspan="2"></td>
+                            <td id="three4" rowspan="2"></td>
+                            <td id="four4" rowspan="2"></td>
+                            <td id="five4" rowspan="2"></td>
+                        </tr>
+                        <tr style="height: 30px;line-height: 30px">
+                            <td bgcolor="#d2e9ff">第8节课</td>
+                        </tr>
+                        <tr style="height: 20px;line-height: 20px">
+                            <td width="100px" height="20px"></td>
+                            <td colspan="5" bgcolor="#d2e9ff"></td>
+                        </tr>
+                        <tr style="height: 30px;line-height: 30px">
+                            <td bgcolor="#d2e9ff">第9节课</td>
+                            <td id="one5" rowspan="3"></td>
+                            <td id="two5" rowspan="3"></td>
+                            <td id="three5" rowspan="3"></td>
+                            <td id="four5" rowspan="3"></td>
+                            <td id="five5" rowspan="3"></td>
+                        </tr>
+                        <tr style="height: 30px;line-height: 30px">
+                            <td bgcolor="#d2e9ff">第10节课</td>
+                        </tr>
+                        <tr style="height: 30px;line-height: 30px">
+                            <td bgcolor="#d2e9ff">第11节课</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </form>
+</body>
+
+</html>

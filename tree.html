@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+        @import url('components/dtree/dtree.css');
+    </style>
+    <script type="text/javascript">var dtreeIconBasePath = "components/dtree";</script>
+    <script type="text/javascript" src="components/dtree/dtree.js"></script>
+    <link rel="stylesheet" href="./css/tree.css">
+    <title>导航树</title>
+</head>
+
+
+<body>
+    <script type="text/javascript" > 
+        var treeMenu = [
+            { level: 1, name: "请假管理" },
+            { level: 2, name: "请假", ico: "images/icon_default.gif", link: "./main-right/stu-leave.html" },
+            { level: 2, name: "请假反馈", ico: "images/icon_default.gif", link: "./main-right/stu-leave feedback.html" },
+
+            { level: 1, name: "作业管理" },
+            { level: 2, name: "作业查询", ico: "images/icon_default.gif", link: "./main-right/stu-homework query.html" },
+            { level: 2, name: "作业上传", ico: "images/icon_default.gif", link: "./main-right/stu-homework uploading.html" },
+
+            { level: 1, name: "课程管理" },
+            { level: 2, name: "课程表", ico: "images/icon_default.gif", link: "./main-right/stu-timetable.html" },
+
+            { level: 1, name: "成绩管理" },
+            { level: 2, name: "课程成绩", ico: "images/icon_default.gif", link: "./main-right/stu-grades.html " },
+            { level: 2, name: "成绩修改申请", ico: "images/icon_default.gif", link: "./main-right/stu-grades apply.html " },
+
+            { level: 1, name: "更换密码", ico: "images/key.png", link: "./main-right/changePw.html" },
+        ];
+    </script>
+    <div id="menuC">导航栏: 【
+        <a href="#" onclick="tree.openAll();this.blur();return false;">展开</a>】 【
+        <a href="#" onclick="tree.closeAll();this.blur();return false;">折叠</a>】
+    </div>
+
+    <div id="ddtree">
+    <div class="dtree">
+        <script type="text/javascript"> 
+            //建立新树
+            tree = new dTree('tree');
+            tree.config.target = "MainFrame";
+            tree.config.useCookies = false;
+            var selNum = -1;
+            var link = "";
+            //根目录
+            tree.add(0, -1, '管理中心', null, null, null, '', '');
+            var count = 0;
+            var pLevelIdArray = new Array();
+            pLevelIdArray[1] = 0;
+            var currLevel = 1;
+            for (var i = 0; i < treeMenu.length; i++) {
+                var item = treeMenu[i];
+                var itemLevel = item.level;
+                pLevelIdArray[itemLevel + 1] = ++count;
+                if (item.link != null && item.link != "") {
+                    if (item.ico != null) {
+                        tree.add(count, pLevelIdArray[itemLevel], item.name, item.link, null, null, item.ico, item.ico);
+                    } else {
+                        tree.add(count, pLevelIdArray[itemLevel], item.name, item.link);
+                    }
+                } else {
+                    if (item.ico != null) {
+                        tree.add(count, pLevelIdArray[itemLevel], item.name, null, null, null, item.ico, item.ico);
+                    } else {
+                        tree.add(count, pLevelIdArray[itemLevel], item.name);
+                    }
+                }
+                if (item.select) {
+                    selNum = count;
+                    link = item.link;
+                }
+            }
+            document.write(tree);
+            tree.openAll();
+            if (selNum != -1) {
+                tree.openTo(selNum, true);
+                top.document.frames["MainFrame"].location.href = link;
+            }
+        </script>
+    </div>
+</div>
+</body>
+
+</html>

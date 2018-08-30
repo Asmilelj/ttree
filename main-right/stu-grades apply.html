@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title></title>
+    <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/main-right.css">
+    <link rel="stylesheet" href="../css/mycss.css">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../js/Calendar3.js"></script>
+</head>
+
+<body>
+
+    <div id="navi">
+        <div id='naviDiv'>
+            <span>
+                <img src="../images/arror.gif" width="11" height="11" border="0" alt="">
+            </span>&nbsp;成绩管理
+            <span>&nbsp;
+                <span>
+                    <img src="../images/arror.gif" width="7" height="11" border="0" alt="">
+                </span>&nbsp;
+                <a href="stu-grades apply.html">成绩修改申请</a>
+                <span>&nbsp;
+        </div>
+    </div>
+
+    <div id="mainContainer">
+        <form action="" method="POST">
+            <div id="score">
+                <div id="score_sq">
+                    <span>成绩修改申请</span>
+                    <hr style="width: 60%;border-top:2px solid #555555;margin: 20px 0 0 120px;">
+                </div>
+                <div class="score_xgsq">
+                    <label class="hq">课程名称：</label>
+                    <input class="fc_score" type="text" list="kcmc" autofocus="autofocus" placeholder="请选择课程">
+                    <datalist id="kcmc">
+                        <option>最优化</option>
+                        <option>数字图像处理</option>
+                    </datalist>
+                </div>
+                <br>
+                <div class="score_xgsq">
+                    <label class="hq">修改内容：</label>
+                    <input class="fc_score" type="text" autofocus="autofocus" placeholder="请输入修改内容">
+                </div>
+                <br>
+                <div class="score_xgsq">
+                    <label class="hq">具体详情：</label>
+                    <input class="fc_score" type="text" autofocus="autofocus" placeholder="请输入具体内容">
+                </div>
+                <br>
+                <div class="btn_tijiao">
+                    <input type="submit" class="btn_tj" value="提交">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

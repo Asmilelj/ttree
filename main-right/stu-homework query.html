@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="../css/main-right.css">
+<script type="text/javascript" src="../js/Calendar3.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+<body>
+    <div id="navi">
+        <div id='naviDiv'>
+            <span>
+                <img src="../images/arror.gif" width="11" height="11" border="0" alt="">
+            </span>&nbsp;作业管理
+            <span>&nbsp;
+                <span>
+                    <img src="../images/arror.gif" width="7" height="11" border="0" alt="">
+                </span>&nbsp;
+                <a href="stu-homework query.html">作业查询</a>
+                <span>&nbsp;
+        </div>
+    </div>
+    <div id="mainContainer">
+        <form action="leaveBillAction_save.action" method="POST">
+            <div id="homework_query">
+                <div id="score_sq">
+                    <span>作业查询</span>
+                    <hr style="width: 60%;border-top:2px solid #555555;margin: 20px 0 0 120px;">
+                </div>
+                <div id="hwq_top">
+                    <div class="timeT">
+                        <label class="hq">课程名称：</label>
+                        <input class="fc" type="text" list="kcmc" autofocus="autofocus">
+                        <datalist id="kcmc">
+                            <option>最优化</option>
+                            <option>数字图像处理</option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <div class="timeT">
+                        <label class="hq">任课教师：</label>
+                        <input class="fc" type="text" list="rkjs" autofocus="autofocus">
+                        <datalist id="rkjs">
+                            <option>张贵军</option>
+                            <option>朱涛</option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <div class="timeT">
+                        <label class="hq">日期查询：</label>
+                        <input class="fc" type="date" autofocus="autofocus">
+                    </div>
+                </div>
+                <br>
+                <div class="timeT_btn">
+                    <input type="submit" class="btn_q" value="查询">
+                    <input type="submit" class="btn_r" value="取消">
+                    <input type="submit" class="btn_f" value="返回首页">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
